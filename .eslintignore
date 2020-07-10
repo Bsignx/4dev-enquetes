@@ -4,3 +4,4 @@ coverage
 **/*.js
 build
 public
+*.scss
