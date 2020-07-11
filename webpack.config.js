@@ -12,7 +12,7 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js', 'scss'],
     alias: {
-      '@': path.join(__dirname)
+      '@': path.join(__dirname, 'src')
     }
   },
   module: {
@@ -33,7 +33,7 @@ module.exports = {
         loader: 'sass-loader'
       }]
     }]
-  }
+  },
   devServer: {
     contentBase: './public',
     writeToDisk: true,
@@ -43,7 +43,7 @@ module.exports = {
     react: 'React',
     'react-dom': 'ReactDOM'
   },
-  plugin: [
+  plugins: [
     new CleanWebpackPlugin()
   ]
 }
