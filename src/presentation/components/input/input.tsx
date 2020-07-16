@@ -21,7 +21,6 @@ const Input: React.FC<Props> = (props: Props) => {
       ...state,
       [event.target.name]: event.target.value,
     });
-    console.log(state);
   };
 
   const getStatus = (): string => {
